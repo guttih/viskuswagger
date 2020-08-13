@@ -23,7 +23,12 @@
  *       title: asdf
  *       description: asdfdd
  *       owner: dfddddd
- * 
+ *
+ *   ServiceListObjectResponse:
+ *     type: object
+ *     properties:
+ *       data: 
+ *         $ref: '#/definitions/ServiceListObject' 
  *   Error:
  *     type: object
  *     properties:

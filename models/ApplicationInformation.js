@@ -1,5 +1,7 @@
-
 // see: https://github.com/island-is/handbook/blob/feature/add-api-design-guide-structure/docs/api-design-guide/implementation/documentation.md#user-content-info-method
+
+
+
 class ApplicationInformation {
     
     constructor(title, version, description) {

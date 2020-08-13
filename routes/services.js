@@ -42,6 +42,8 @@ router.get("/", (req, res) => {
  *      responses:
  *        200:
  *          description: A successful response
+ *          schema:
+ *            $ref: '#/definitions/ServiceListObjectResponse'
  */
 router.get("/:id", (req, res) => {
   var ret;
@@ -93,7 +95,6 @@ router.get("/:id", (req, res) => {
  *             application/json: {"error" : { "code": 500, "message": "Server error"},
  *                                "errors": [{"code": 44, "message": "configuration file not found"}] }
  */
-
 router.put("/", (req, res) => {
 
     var ret;
