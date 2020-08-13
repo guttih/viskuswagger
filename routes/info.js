@@ -7,12 +7,15 @@ const ApplicationInformation = require('../models/ApplicationInformation');
 /**
  * @swagger
  * 
- * /info:
- *  get:
- *    description: Provides information about this service
- *    responses:
- *      '200':
- *        description: A successful response
+ * paths:
+ *   /info:
+ *     get:
+ *       description: Provides information about this service
+ *       responses:
+ *         200:
+ *           description: A successful response
+ *           schema:
+ *             $ref: '#/definitions/ApplicationInformation'
  */
 
 router.get("/", (req, res) => {

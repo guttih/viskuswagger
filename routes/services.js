@@ -29,21 +29,21 @@ router.get("/", (req, res) => {
 /**
  * @swagger
  * 
- *paths:
- *  /services/{serviceId}:
- *    get:
- *      summary: Use to request all services
- *      parameters:
- *        - in: path
- *          name: serviceId
- *          schema:
- *            type: string
- *          required: true 
- *      responses:
- *        200:
- *          description: A successful response
- *          schema:
- *            $ref: '#/definitions/ServiceListObjectResponse'
+ * paths:
+ *   /services/{serviceId}:
+ *     get:
+ *       summary: Use to request all services
+ *       parameters:
+ *         - in: path
+ *           name: serviceId
+ *           schema:
+ *             type: string
+ *           required: true 
+ *       responses:
+ *         200:
+ *           description: A successful response
+ *           schema:
+ *             $ref: '#/definitions/ServiceListObjectResponse'
  */
 router.get("/:id", (req, res) => {
   var ret;
